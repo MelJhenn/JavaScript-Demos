@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+
+
+<script>
+var primes=[2,3]; 
+function isPrime (number){
+	for (var i=0; i<primes.length; i++){
+    	var currentPrime=primes[i]; 
+        if (number%currentPrime==0){
+        	return false;
+        }
+    }
+    return true; 
+}
+for (var number=4; number<1000; number++){
+	if(isPrime(number)){
+    	primes.push(number);
+    }
+}
+console.log(primes);
+</script>
+
+</body>
+</html>
+

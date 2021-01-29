@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+
+<h2>JavaScript Objects</h2>
+
+
+<p id="demo"></p>
+
+
+<script>
+
+var divide=function (a,b){
+	
+return a/b;
+};
+function multiply(a,b){
+	
+return a*b;
+
+}
+
+var person1 = {
+	
+name:"Milton", 
+    
+age:32,
+    
+setName:function(aString){
+    	
+this.name=aString;
+    
+}
+
+};
+
+var person2 = {name:"Melissa", age:26};
+
+person2.setName=function(aString){
+	
+this.name=aString;
+}
+
+person1.setName("Milton Mamani");
+
+person2.setName("Melissa Toco");
+
+//alert=console.log;
+
+alert ("Hola");
+
+console.log(person2.setName);
+
+console.log(console);
+
+console.log(person1);
+
+console.log(person2);
+
+console.log(divide(5,2));
+
+
+</script>
+
+
+</body>
+
+</html>

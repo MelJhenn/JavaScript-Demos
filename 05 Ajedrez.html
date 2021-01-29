@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Tablero de Ajedrez</h1>
+<script>
+
+for (var j=0; j<8;j++){
+	var line="";
+	for (var i=0; i<8; i++){
+		//line+="*"
+    	/**if (i%2==0){
+    		line+="\u25A1";
+    	}
+    	else {
+    		line+="\u25A0";
+    
+    	}**/
+    
+    	line+=(i+j)%2==0?"\u25A1":"\u25A0";
+	}
+	console.log(line);
+}
+
+</script>
+</body>
+</html>
